@@ -1,0 +1,15 @@
+# MCP协议
+mcp[cli]
+fastmcp
+
+# 智谱AI SDK
+zhipuai
+
+# Web框架
+flask
+
+# 环境变量
+python-dotenv
+
+# HTTP请求
+httpx
