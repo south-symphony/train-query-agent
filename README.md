@@ -34,31 +34,28 @@
 ## 🚀 快速开始
 ### 1. 安装依赖
 Windows 系统在项目根目录依次执行：
-```bash
-# 创建虚拟环境
+
+#### 创建虚拟环境
 python -m venv .venv
 
-# 激活虚拟环境
+#### 激活虚拟环境
 .venv\Scripts\activate
 
-# 安装所有依赖
+#### 安装所有依赖
 pip install -r requirements.txt
 
 ### 2. 配置密钥
 
-在项目根目录创建 `.env` 文件，填入：
-
-ZHIPUAI_API_KEY=你的智谱AI API密钥
+将 `.env.example` 重命名为为 `.env` ，打开 `.env` 文件，填入你的智谱 AI API 密钥并保存
 
 ### 3. 三种启动模式
 
-# 模式一：命令行模式
+#### 模式一：命令行模式
 
 适合开发者调试、快速测试，无需网页界面。
 
-1. 确保已完成依赖安装
-2. 将 `.env.example` 重命名为为 `.env` ，打开 `.env` 文件，填入你的智谱 AI API 密钥并保存
-3. 在项目根目录执行：
+1. 确保已完成依赖安装和密钥配置
+2. 在项目根目录执行：
 
 ```
 python agent\agent_core.py
@@ -68,13 +65,12 @@ python agent\agent_core.py
 
 ---
 
-# 模式二：网页界面模式（推荐）
+#### 模式二：网页界面模式（推荐）
 
 可视化聊天界面，普通用户推荐使用此模式。
 
-1. 确保已完成依赖安装
-2. 将 `.env.example` 重命名为为 `.env` ，打开 `.env` 文件，填入你的智谱 AI API 密钥并保存
-3. 在项目根目录执行：
+1. 确保已完成依赖安装和密钥配置
+2. 在项目根目录执行：
 
 ```
 python web\app.py
@@ -85,7 +81,7 @@ python web\app.py
 
 ---
 
-# 模式三：发行版可执行模式
+#### 模式三：发行版可执行模式
 
 无需安装 Python 环境与依赖，下载即可运行。
 
@@ -97,6 +93,7 @@ python web\app.py
 
 ## 📂 项目目录结构
 
+```
 train-query-agent/
 ├── .env                # 环境变量（存放API密钥）
 ├── .env.example        # 环境变量模板
@@ -114,3 +111,4 @@ train-query-agent/
     ├── app.py
     └── templates/
         └── index.html
+```
